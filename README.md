@@ -6,11 +6,13 @@ class PrimeDivider {
             return 0;
         }
 
-        for ( int i = 2; i <= n/2; i++ ) {
+        for ( int i = 2; i <= Math.sqrt(n); i++ ) {
             if ( n % i == 0 ) {
+                System.out.println("znachenii i: " + i);
                 return 0;
             }
         }
+
         return 1;
     }
 
